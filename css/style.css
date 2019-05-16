@@ -163,10 +163,10 @@ nav a#pull { display: none;
 
 /* End Toggle Button  009688   */
 /* End Menu  */
-.top-container{ color:#fff; padding-top:250px; text-align:center;
+.top-container{ color:#fff; padding-top:240px; text-align:center;
 }
 
-.top-container H2{ align-items: center; background-color: #ffffff; padding: 0 10px; display: inline-block; }
+.top-container H2{ align-items: center; background-color: #ffffff; padding: 8px 36pxpx; display: inline-block; }
 
 .text-1{ font-size:2.6em; font-weight:normal; padding:2%; overflow:hidden;
 }
