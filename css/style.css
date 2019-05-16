@@ -384,7 +384,7 @@ textarea{ background-color: #fff; border-radius: 5px; border: 1px solid #ccc !im
 }
 .social-media a{ padding:0px 10px; color:#4d5d7c;
 }
-.copy-right{ width:96%; margin: 2%; font-size:12px; line-height:22px; font-weight:normal; text-align:center; color:#8c8c8c;
+.copy-right{ float: right; width:96%; margin: 2%; font-size:12px; line-height:22px; font-weight:normal; text-align:center; color:#8c8c8c;
 }
 
 .animate-opacity{
