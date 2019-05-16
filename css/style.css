@@ -326,6 +326,8 @@ nav a#pull { display: none;
 }
 .contact-info p{ font-size:14px; line-height:24px; font-weight:normal; margin:8px 22px 8px; text-align:left;
 }
+.contact-info1 p{ font-size:14px; line-height:24px; font-weight:normal; margin:8px 22px 8px; text-align:left;
+}
 
 .input{ height:50px; width:96%; padding: 2%; float:left; background-color: #fff; border-radius: 5px; border: 1px solid #ccc !important;
 }
