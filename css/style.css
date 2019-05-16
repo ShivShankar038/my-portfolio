@@ -175,7 +175,7 @@ nav a#pull { display: none;
 
 .btn-1:hover{ background:#F69; border-color: #F69; color:#fff;
 }
-.container{ margin:0 auto;min-height:100%; background:#fff; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+.container{ margin:0 auto;min-height:100%; background: #f4f4f4; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .container h2{ font-size:1.5em; font-weight:bold; margin-top:6%; text-align:center; color:#0f3549;
 }
@@ -240,7 +240,7 @@ nav a#pull { display: none;
 }
 
 
-.main-services{ margin:0 auto; background:#fff; text-align:center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+.main-services{ margin:0 auto; background: #f4f4f4; text-align:center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .services{ margin-top:2%; margin-bottom:2%; overflow: hidden; position: relative; -webkit-animation-name: services; -webkit-animation-duration: 2s; animation-name: services; animation-duration: 2s;
 }
