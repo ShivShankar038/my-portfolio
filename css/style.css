@@ -136,7 +136,7 @@ nav a#pull { display: none;
 }
 
 /*Styles for screen 515px and lower*/
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 	.wraper{ width:100%; padding:18% 3% 3% 3%;
 	}
 	nav { border-bottom: 0; background-color: #4d5d7c;
