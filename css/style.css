@@ -131,7 +131,7 @@ nav a#pull { display: none;
   	}
   	nav li { width: 50%; float: left; position: relative;
   	}
-  	nav a { text-align: center; width: 100%; text-indent: 0;
+  	nav a { text-align: center; text-indent: 0;
   	}
 }
 
