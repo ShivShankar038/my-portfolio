@@ -1,0 +1,61 @@
+@media (max-width:601px){.popup-content{margin:50px 10px 10px 10px;width:auto !important}}
+@media (max-width:768px){.popup-content{width:250px}}
+@media (min-width:992px){.popup-content{width:450px}}
+
+.popup{
+	z-index: 1; display: none; padding-top: 10%; padding-bottom: 2%; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.6);
+	}
+.popup-content{ width: 560px; margin: auto; background-color: #FFF; border:1px solid #ccc; border-radius: 10px; position: relative; padding: 0; outline: 0; 
+}
+
+.closebtn{ text-decoration: none; float: right; font-size: 24px; font-weight: bold; padding: 14px 4% 0%;
+}
+.popup-header{ padding: 15px; border-bottom: 1px solid #e5e5e5;
+}
+.popup-body{ position: relative; padding: 14px 30px; height: 300px; overflow: auto;
+}
+.popup-body p{ font-size:14px; line-height:18px; font-weight:normal; margin-top:5px; text-align:left;
+}
+.text-title{ margin-right: 100px; font-weight: bold;
+}
+.text-enviroment{ margin-right: 43px; font-weight: bold;
+}
+.text-role{ margin-right: 98px; font-weight: bold;
+}
+.text-team{ margin-right: 62px; font-weight: bold;
+}
+.text-duration{ margin-right: 72px; font-weight: bold;
+}
+.popup-footer{ padding: 15px; text-align: right; border-top: 1px solid #e5e5e5;
+}
+.btn-default { padding: 6px 12px; color: #333; background-color: #fff; border:1px solid #ccc; border-radius: 5px; cursor: pointer;
+}
+.btn-default:hover { background-color: #e6e6e6; border:1px solid #adadad; border-radius: 5px;
+}
+
+.closebtn:hover,.closebtn:focus{ color: red; text-decoration: none; cursor: pointer;
+}
+
+.animate-opacity{ -webkit-animation-name: opac; -webkit-animation-duration: 4s; animation-name: opac; animation-duration: 4s;}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.popup-animate-zoom { -webkit-animation-name: zoom; -webkit-animation-duration: 0.4s; animation-name: animate-popup-zoom; animation-duration: 0.4s;}
+@-webkit-keyframes animate-popup-zoom{from{transform:scale(0)} to{transform:scale(1)}}
+@keyframes animate-popup-zoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.popup-animate-top{ position: relative; -webkit-animation-name: popup-animatetop; -webkit-animation-duration: 0.4s; animation-name: popup-animatetop; animation-duration: 0.4s;}
+@-webkit-keyframes popup-animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes popup-animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.popup-animate-left{ position: relative; -webkit-animation-name: popup-animateleft; -webkit-animation-duration: 0.4s; animation-name: popup-animateleft; animation-duration:0.4s;}
+@-webkit-keyframes popup-animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes popup-animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.popup-animate-right{ position: relative; -webkit-animation-name: popup-animateright; -webkit-animation-duration: 0.4s; animation-name: popup-animateright; animation-duration: 0.4s;}
+@-webkit-keyframes popup-animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes popup-animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.popup-animate-bottom{ position: relative; -webkit-animation-name: popup-animatebottom; -webkit-animation-duration: 0.4s; animation-name: popup-animatebottom; animation-duration:0.4s;}
+@-webkit-keyframes popup-animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes popup-animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}

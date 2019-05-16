@@ -1,0 +1,412 @@
+*{ margin:0px; padding:0px;}
+* {
+    box-sizing: border-box;
+}
+.row::after { content: ""; clear: both; display: block;
+}
+[class*="col-"] { width: 100%; float: left; padding: 16px;
+}
+html { font-family: FontAwesome, Open Sans, sans-serif;
+}
+body { font-family: FontAwesome, Open Sans, sans-serif; font-size: 14px; line-height: 22px; margin: 0; color:#0f3549;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { color:#0f3549; font-weight: 200; letter-spacing: -1px; margin: 0;
+}
+
+h1 { font-size: 2.6em; line-height: 44px; margin: 0 0 32px 0;
+}
+
+h2 { font-size: 2.2em; font-weight: 300; line-height: 42px; margin: 0 0 32px 0;
+}
+
+h3 { font-size: 1.8em; font-weight: 400; letter-spacing: normal; line-height: 24px; margin-bottom: 33px; /*text-transform: uppercase;*/
+}
+
+h4 { font-size: 1.4em; font-weight: 400; letter-spacing: normal; line-height: 27px; margin: 0 0 14px 0;
+}
+
+h5 { font-size: 1em; font-weight: 600; letter-spacing: normal; line-height: 18px; margin: 0 0 14px 0; /*text-transform: uppercase;*/
+}
+
+h6 { font-size: 1em; font-weight: 400; letter-spacing: normal; line-height: 18px; margin: 0 0 14px 0;
+}
+
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.active a{ background-color: #fff; border-radius:5px; color: #0f3549 !important;}
+
+b,strong{font-weight:bold;}
+
+hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eee;}
+
+.center{text-align:center !important}
+.wraper{ width:100%; padding:3% 3% 3% 3%;
+}
+.bg{ background:url(../img/new-zealand-141_960_720.jpg) center center; background-size:cover; width:100%; height:600px; position:relative;
+}
+.logo{ width: 95%; height: auto; padding-top: 1%; padding-left:4%; float: left;
+}
+.top{ width:75%; height:auto; float:left;
+}
+
+.socal-logo{ width: 100%; height: auto; padding-top: 15%; float: left;
+}
+
+/*----- Menu -----*/
+
+.header{ position:fixed; width:100%; height:auto; z-index:1; top:0; background-color:#0f3549; line-height: 10px;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after { content: " "; display: table;
+}
+.clearfix:after {  clear: both;
+}
+.clearfix { *zoom: 1;
+}
+
+nav { height: 50px; width: 100%; color: #fff; font-size: 12pt; font-weight: normal; position: relative; border-radius:5px;
+}
+nav ul { margin: 0 auto; width: 100%; height: 50px;
+}
+nav li { display: inline; text-align:center;
+}
+nav a { color: #fff; display: inline-block; width: 100px; text-align: center; text-decoration: none; line-height: 50px;
+}
+nav li a { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+}
+nav li:last-child a { border-right: 0;
+}
+nav a:hover, nav a:active { background-color: #fff; border-radius:5px; color: #0f3549;
+}
+nav a#pull { display: none;
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 991px) {
+	.wraper { width: 100%; padding: 25% 3% 3% 3%;
+	}
+	img { padding-top:8px; padding-left: 8px; float: left;
+	}
+	img:after { padding-top:8px;
+	}
+	nav { height: auto;
+  	}
+  	nav ul { padding: 20px; width: 100%; display: block; height: auto;
+  	}
+  	nav li { width: 50%; float: left; position: relative;
+  	}
+  	nav a { text-align: center; width: 100%; text-indent: 0;
+  	}
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 767px) {
+	.wraper{ width:100%; padding:18% 3% 3% 3%;
+	}
+	nav { border-bottom: 0; background-color: #4d5d7c;
+	}
+	nav a { text-align: center; width: 60%; text-indent: 0;
+  	}
+	nav ul { padding: 20px; display: none; height: auto;
+	}
+	.pull { display: none; float: none; width: 100%; text-align:center;
+	}
+	nav a#pull { display: block; background-color: #4d5d7c; width: 100%; height: 56px; position: relative; border-radius:5px; color:#fff;
+	}
+	nav a#pull:after { content:""; background: url('../img/nav-icon.png') no-repeat; width: 35px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 20px;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li { display: block; float: none; width: 100%; text-align:center;
+	}
+	nav li a { border-bottom: 1px solid #fff; border-radius:5px;
+	}
+}
+
+/* End Toggle Button  009688   */
+/* End Menu  */
+.top-container{ color:#fff; padding-top:250px; text-align:center;
+}
+.text-1{ font-size:2.6em; font-weight:normal; padding:2%; overflow:hidden;
+}
+.btn-1{ border:2px solid #fff; padding:20px 40px; margin-top:5%; cursor:pointer; background:none; color:#fff; font-size:1.2em; letter-spacing:2px;
+}
+
+.btn-1:hover{ background:#F69; border-color: #F69; color:#fff;
+}
+.container{ margin:0 auto;min-height:100%; background:#fff; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.container h2{ font-size:1.5em; font-weight:bold; margin-top:6%; text-align:center; color:#0f3549;
+}
+.container p{ font-size:16px; font-weight:normal; line-height:18px; margin:8px 22px;
+}
+
+.container-2{ margin-top:2%; margin-bottom:2%; overflow:hidden;
+}
+.about-bg{ overflow: hidden; border: 1px solid #ddd; border-radius: 4px; padding: 5px; cursor: pointer; transition: 0.3s;
+}
+.about-bg:hover{ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about{ color:#000; overflow:hidden;
+}
+.animation-abouttext{ position: relative; -webkit-animation: abouttext 2s; animation-duration: abouttext 2s;
+}
+@-webkit-keyframes abouttext { from {left: 100px; opacity:0.5;} to {left: 0px; opacity:0.8;}
+}
+@keyframes abouttext { from {left: 100px; opacity:0.5;} to {left: 0px; opacity:0.8;}
+}
+.about div{ font-size:24px;
+}
+.about p{ font-size:14px; margin:0 auto; font-weight:normal; line-height:18px; text-align:justify; margin:8px 0 8px; color:#0f3549;
+}
+
+.btn-start{ border:none; background:#00b0dc; color:#fff; padding:20px 36px; margin-top:5%; cursor:pointer; border-radius:5px;
+}
+.btn-start:hover{ border:none; background:#009cc3; color:#fff; padding:20px 36px; cursor:pointer; border-radius:5px;
+}
+
+.main-portfolio{ margin: 0 auto; background:#f4f4f4; text-align:center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.portfolio{ margin-top:2%; margin-bottom:2%; overflow:hidden;
+}
+.portfolio p{ font-size:16px; font-weight:normal; line-height:18px; margin:8px 22px; text-align:center; color:#0f3549;
+}
+.portfolio h2{ font-size:1.5em; font-weight:bold;  margin-top:6%; color:#0f3549;
+}
+
+.car-box{ float:left; overflow: hidden; border: 1px solid #ddd; border-radius: 4px; padding: 5px; cursor: pointer;
+}
+.car-box:hover{ box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.p-img{ min-height:300px; padding:0px; position:relative; cursor:pointer;
+}
+.p-img img{ width:100%; height:100%;}
+.p-img .overlay{ width:100%; height:100%; position:absolute; top:0px; left:0px; background:rgba(0,0,0,.6); display:none;
+}
+.p-img .btn-readmore{ border:1px solid #FFF; padding:10px 20px; position:relative; top:50%; cursor:pointer; background:none; color:#fff;
+}
+.p-img .btn-readmore:hover{ background:#fff; color:#0f3549; border-color:#fff;
+}
+.p-img:hover .overlay{ display:block;
+}
+
+.car-detail{ overflow:hidden; padding:3%; background:#0f3549; color:#fff;
+}
+.car-title{ float:left;
+}
+.car-owner{ float:right;
+}
+
+
+.main-services{ margin:0 auto; background:#fff; text-align:center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.services{ margin-top:2%; margin-bottom:2%; overflow: hidden; position: relative; -webkit-animation-name: services; -webkit-animation-duration: 2s; animation-name: services; animation-duration: 2s;
+}
+@-webkit-keyframes services {
+    0%   {opacity: 0.0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+@keyframes services {
+    0%   {opacity: 0.0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+.services h2{ font-size:1.5em; font-weight:bold;  margin-top:6%; color:#0f3549;
+}
+.services p{ font-size:16px; font-weight:normal; line-height:18px; margin:8px 22px; text-align:center;
+}
+
+.box { width:100%; float:left; font-size:1.2em; font-weight:bold; height:auto; background:#f1f1f1; border:1px solid gray; cursor:pointer; margin-bottom:5%; margin-top:0%;
+}
+.box p{font-size:16px; font-weight:normal; margin:24px;
+}
+.box:hover{ background:#0f3549; color:#fff; border:1px solid white; box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text{ padding:6%; text-align:center;
+}
+.line-small{ width:30%; border-bottom:2px solid ; margin:0 auto; padding-bottom:12px;
+}
+.btn-readmore-2{ background:#000; padding:10px 20px; cursor:pointer; color:#fff; border:none;
+}
+.btn-readmore-2:hover{ background:#fff; color:#000; border-color:#fff; box-shadow: 0 0 20px;
+}
+
+.contact{ margin:0 auto; background:#f4f4f4; text-align:center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.contact p{ font-size:16px; font-weight:normal; line-height:18px; margin:8px 22px; text-align:center; color:#0f3549;
+}
+.contact h2{ font-size:1.5em; font-weight:bold;  margin-top:6%; color:#0f3549;
+}
+.contact-box{ margin-left:2%; margin-right:2%; margin-top:2%; margin-bottom:2%; overflow:hidden; overflow:hidden; position: relative; -webkit-animation-name: cont; -webkit-animation-duration: 2s; animation-name: cont; animation-duration: 2s;
+}
+@-webkit-keyframes cont {
+    0%   {opacity: 0.0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+@keyframes cont {
+    0%   {opacity: 0.0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+.contact-info{ width:94%; margin:5%; float:left; overflow:hidden; text-align:left; position: relative; -webkit-animation: info 2s; animation-duration: info 2s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes info {
+    from {right: 100px; opacity:0.5;}
+    to {right: 0px; opacity:0.8;}
+}
+
+@keyframes info {
+    from {right: 100px; opacity:0.5;}
+    to {right: 0px; opacity:0.8;}
+}
+.contact-info1{ width:94%; margin:5%; float:left; overflow:hidden; text-align:left; position: relative; -webkit-animation: info1 2s; animation: info1 2s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes info1 {
+    from {left: 100px; opacity:0.5;}
+    to {left: 0px; opacity:0.8;}
+}
+
+@keyframes info1 {
+    from {left: 100px; opacity:0.5;}
+    to {left: 0px; opacity:0.8;}
+}
+.contact-info p{ font-size:14px; line-height:24px; font-weight:normal; margin:8px 22px 8px; text-align:left;
+}
+
+.input{ height:50px; width:96%; padding: 2%; float:left; background-color: #fff; border-radius: 5px; border: 1px solid #ccc !important;
+}
+
+.name{ float: left; width: 100%; padding-bottom: 2%;
+}
+.email{ float: left; width: 100%; padding-bottom: 2%;
+}
+
+.contact-info-2{width:70%; padding-bottom:20px; height:auto; overflow:hidden;
+}
+textarea{ background-color: #fff; border-radius: 5px; border: 1px solid #ccc !important;
+}
+.message{ float: left; width: 96%; padding: 2%;
+}
+
+.btn-sm{ width: 90px; height: 50px; float: left; margin-top:5%; cursor:pointer; background-color: #0CF; color: #FFF; font-weight:bold; border: none; border-radius: 5px;
+}
+.btn-sm:hover{ background-color: #009cc3; color: #FFF; border: none; border-radius: 5px;
+}
+
+/* Radio button */
+.custom-radio input[type="radio"] { display:none;
+}
+
+.custom-radio input[type="radio"] + label {
+	font-size:17px;
+	/* text-transform: uppercase; */
+	color: #601d0d; cursor: pointer;
+}
+
+.custom-radio input[type="radio"] + label span {
+	display:inline-block;
+	width:25px;
+	height:25px;
+	margin:6px;
+	vertical-align:middle;
+	cursor:pointer;
+	-moz-border-radius:  50%;
+	border-radius:  50%;
+}
+
+/* The trick: border creates same look as the radio button usually have */
+/* remove it to see what happens */
+.custom-radio input[type="radio"] + label span { background-color: #c4c4c4; border: 6px double #c4c4c4;
+}
+
+/* Checked state for radio */
+.custom-radio input[type="radio"]:checked + label span{ background-color: #611906;
+}
+/* End Radio button */
+
+
+.footer-main{ width: 100%; height: 100px; background: #162a3a; overflow: hidden;
+}
+.footer{ width: 100%; margin:0 auto; height: auto;
+}
+.social-media{ float:left;
+}
+.social-media a{ padding:0px 10px; color:#4d5d7c;
+}
+.copy-right{ width:96%; margin: 2%; font-size:12px; line-height:22px; font-weight:normal; text-align:center; color:#8c8c8c;
+}
+
+.animate-opacity{
+-webkit-animation-name:opac;-webkit-animation-duration:4s;animation-name:opac;animation-duration:4s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{
+position:relative;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{
+position:relative;-webkit-animation-name:animateleft;-webkit-animation-duration:0.4s;animation-name:animateleft;animation-duration:0.4s}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{
+position:relative;-webkit-animation-name:animateright;-webkit-animation-duration:0.4s;animation-name:animateright;animation-duration:0.4s}
+@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{
+position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.4s}
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom { -webkit-animation-name: zoom; -webkit-animation-duration: 0.4s; animation-name: animatezoom; animation-duration: 0.4s;}
+@-webkit-keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
