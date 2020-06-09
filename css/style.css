@@ -133,6 +133,9 @@ nav a#pull { display: none;
   	}
   	nav a { text-align: center; text-indent: 0;
   	}
+	.top-container H2 {
+		padding: 8px 0px;
+	}
 }
 
 /*Styles for screen 515px and lower*/
